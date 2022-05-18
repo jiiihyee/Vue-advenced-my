@@ -30,6 +30,6 @@ export const router = new VueRouter({
     {
       path:'/item',
       component:ItemView,
-    }
+    }//실습끝
   ]
 });
