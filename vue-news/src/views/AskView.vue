@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import {fetchAsksList} from '../api/index'
+import {fetchAsksList} from '../api/index';
 export default {
 
   created() {

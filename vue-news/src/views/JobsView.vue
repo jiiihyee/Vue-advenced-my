@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import {fetchJobsList} from '../api/index';
+import {fetchJobsList} from '../api/index.js';
 export default {
     data(){
       return{
@@ -12,7 +12,7 @@ export default {
    },
   created(){
     fetchJobsList()
-    .then(response => this.jobs = response.data)
+    .then(response => console.log(response) )
     .catch(error => console.log(error));
   }
 
