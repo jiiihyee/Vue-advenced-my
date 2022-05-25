@@ -1,5 +1,10 @@
+
 <template>
-  <div v-for="user in this.$store.state.news"> {{user.title}}</div>
+ <div> 
+  <div 
+       v-for="(item, index) in $store.state.news" :key="index">{{item.title}}</div>
+        </div>
+ 
 </template>
 
 <script>

@@ -1,5 +1,10 @@
+
 <template>
-  <div v-for="ask in this.$store.state.asks">{{ask}}</div>
+ <div> 
+  <div 
+       v-for="(ask, index) in $store.state.asks" :key="index">{{ask.title}}</div>
+        </div>
+ 
 </template>
 
 <script>
